@@ -48,9 +48,14 @@ body {
 }
 
 .logo {
+  position: relative;
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--text-color);
+}
+
+.navbar {
+  position: relative;
 }
 
 .navbar a {
@@ -313,6 +318,7 @@ span {
   border-bottom: 0.2rem solid var(--third-bg-color);
   border-left: 0.2rem solid var(--main-color);
   border-right: 0.2rem solid var(--main-color);
+  animation: aboutSpinner 8s linear infinite;
 }
 
 .about-content {
@@ -659,6 +665,18 @@ btn-box.btns {
   color: var(--main-color);
 }
 
+/* ANIMATION RELOAD AND SCROLL */
+
+/* .animate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: yellowgreen;
+  z-index: 98;
+} */
+
 /* BREAKPOINTS */
 
 @media (max-width: 1200px) {
@@ -842,5 +860,11 @@ btn-box.btns {
   75%,
   81% {
     opacity: 0;
+  }
+}
+
+@keyframes aboutSpinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
