@@ -781,7 +781,7 @@ section:nth-child(odd) .animate.scroll {
 
 @media (max-width: 850px) {
   .animate.home-img {
-    width: 55%;
+    width: 100%;
   }
 }
 
